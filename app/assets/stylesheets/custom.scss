@@ -1,0 +1,14 @@
+@import "bootstrap";
+
+// Bring back the iOS link tap color
+
+html {
+  -webkit-tap-highlight-color: rgba(153, 153, 153, 0.6);
+}
+
+// Navbar styling
+
+nav {
+    margin: 10px;
+    //border-bottom: 3px solid black;
+}

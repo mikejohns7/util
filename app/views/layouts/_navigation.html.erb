@@ -1,18 +1,13 @@
-<%# navigation styled for Bootstrap 4.0 %>
-<div class="container">
-  <nav class="navbar navbar-dark bg-inverse">
-    <ul class="nav navbar-nav clearfix">
-      <li class="nav-item">
-        <button class="navbar-toggler hidden-sm-up nav-link" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
-          &#9776;
-        </button>
-      </li>
+<nav class="navbar navbar-light bg-faded">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Short Links</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Blog Stats</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Blog Upload</a>
+        </li>
     </ul>
-    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-      <%= link_to "Utilities", root_path, class: 'navbar-brand' %>
-      <ul class="nav navbar-nav">
-        <%= render 'layouts/navigation_links' %>
-      </ul>
-    </div>
-  </nav>
-</div>
+</nav>

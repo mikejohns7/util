@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <%= render 'layouts/rails_defaults' %>
-        <title><%= content_for?(:title) ? yield(:title) : "MJ Utilities" %></title>
-    </head>
-    <body>
-        <header>
-            <%= render 'layouts/navigation' %>
-        </header>
-        <main role="main">
-            <%= render 'layouts/messages' %>
+<head>
+    <%= render 'layouts/rails_defaults' %>
+    <title><%= content_for?(:title) ? yield(:title) : "MJ Utilities" %></title>
+</head>
+<body>
+    <header>
+        <%= render 'layouts/navigation' %>
+    </header>
+    <main role="main">
+        <%= render 'layouts/messages' %>
+        <div class="d-flex justify-content-center">
             <%= yield %>
-        </main>
-    </body>
+        </div>
+    </main>
+</body>
 </html>
